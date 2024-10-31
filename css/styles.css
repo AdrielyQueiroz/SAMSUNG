@@ -205,3 +205,92 @@ header nav {
 .selected {
     outline: 2px solid #43a1ff;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: absolute;
+        padding: 1rem; 
+        margin: 0;
+        font-size: 7px;
+    }
+
+    #navbar a {
+        padding: 0.5rem 0;
+    }
+
+    #logomarca {
+        width: 100px;
+        margin: 0 auto; 
+    }
+
+    #bottom-header {
+        padding: 20px;
+    }
+
+    #bottom-header h3 {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom:30px
+    }
+
+    .btn {
+        width: 30%;
+        padding: 3px;
+
+    }
+
+    #bottom-header a {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    #bottom-header-links {
+        margin-left: 0;
+        justify-content: center;
+        margin-top: 0; 
+    }
+
+    #bottom-header-layer {
+        margin-left: 100px;
+    }
+
+    #bottom-header-layer a {
+        font-size: 14px;
+    }
+
+    #list {
+        flex-direction: column; 
+        margin-left: 0; 
+    }
+
+    #product-image {
+        max-width: 100%; 
+    }
+
+    #image-picker ul {
+        flex-direction: absolute; 
+        font-size: 14px;
+        gap: 20px;
+    }
+
+    #image-picker li {
+        margin: 0.5rem 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        font-size: 0.8rem; 
+    }
+
+    #bottom-header-links {
+        gap: 10px; 
+    }
+
+    .btn {
+        width: 100%; 
+        padding: 12px; 
+    }
+}
