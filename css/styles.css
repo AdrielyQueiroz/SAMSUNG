@@ -207,11 +207,10 @@ header nav {
 } 
 
 /* Media Queries */
-/* Media Query para Telas Médias (Tablets e acima de 768px) */
 @media (min-width: 300px) {
     #navbar {
         flex-direction: row; /* Manter a direção em linha */
-        padding: 0 2rem; /* Espaçamento lateral */
+        padding: 0 1rem; /* Espaçamento lateral reduzido */
         margin: 5px; /* Margem superior/inferior */
         font-size: 0.9rem; /* Tamanho da fonte para navbar */
     }
@@ -232,6 +231,11 @@ header nav {
     #bottom-header-links {
         flex-direction: row; /* Direção em linha para links */
         gap: 15px; /* Espaçamento entre os links */
+        margin-left: 20px; /* Margem à esquerda */
+    }
+
+    #content {
+        padding: 0 1rem; /* Adicionando preenchimento lateral ao conteúdo */
     }
 
     #content #title {
@@ -243,8 +247,8 @@ header nav {
     }
 
     #content #product-image {
-        max-width: 600px; /* Largura máxima da imagem do produto */
-        width: 100%; /* Garantir que a imagem ocupe 100% da largura disponível */
+        max-width: 100%; /* Largura máxima da imagem do produto deve ser 100% */
+        height: auto; /* Manter a proporção da imagem */
     }
 
     #image-picker ul {
@@ -293,5 +297,6 @@ header nav {
 
     #content #product-image {
         max-width: 1000px;
+        width: 100%; /* Assegura que a imagem se ajuste à largura do contêiner */
     }
 }
