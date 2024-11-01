@@ -220,11 +220,11 @@ header nav {
     }
 
     #bottom-header-inner {
-        margin-left: 20px; /* Margem à esquerda */
+        margin-left: 10px; /* Margem à esquerda */
     }
 
     #bottom-header h3 {
-        font-size: 1.5rem; /* Tamanho do título do cabeçalho */
+        font-size: 0.1rem; /* Tamanho do título do cabeçalho */
         text-align: center; /* Centraliza o texto */
     }
 
@@ -233,6 +233,7 @@ header nav {
         gap: 15px; /* Espaçamento entre os links */
         margin-left: 0; /* Remover margem à esquerda */
         justify-content: center; /* Centraliza os links */
+
     }
 
     #content {
