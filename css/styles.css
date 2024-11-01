@@ -211,7 +211,7 @@ header nav {
     #navbar {
         flex-direction: row; /* Manter a direção em linha */
         padding: 0 1rem; /* Espaçamento lateral reduzido */
-        margin: 5px; /* Margem superior/inferior */
+        margin: 5px; /* Margem superior/inferior reduzida */
         font-size: 0.9rem; /* Tamanho da fonte para navbar */
     }
 
@@ -225,13 +225,14 @@ header nav {
 
     #bottom-header h3 {
         font-size: 1.5rem; /* Tamanho do título do cabeçalho */
-        text-align: left; /* Alinhamento à esquerda */
+        text-align: center; /* Centraliza o texto */
     }
 
     #bottom-header-links {
         flex-direction: row; /* Direção em linha para links */
         gap: 15px; /* Espaçamento entre os links */
-        margin-left: 20px; /* Margem à esquerda */
+        margin-left: 0; /* Remover margem à esquerda */
+        justify-content: center; /* Centraliza os links */
     }
 
     #content {
@@ -266,7 +267,7 @@ header nav {
 /* Media Query para Telas Grandes (Desktop e acima de 1024px) */
 @media (min-width: 1024px) {
     #navbar {
-        padding: 0 7rem;
+        padding: 0 7rem; /* Manter o espaçamento lateral em telas grandes */
         margin: 30px;
         gap: 20px;
     }
@@ -279,15 +280,15 @@ header nav {
 
     #bottom-header {
         font-size: 20px;
-        padding: 3rem;
+        padding: 3rem; /* Manter padding em telas grandes */
     }
 
     #bottom-header h3 {
-        margin-left: 150px;
+        margin-left: 0; /* Remover margem para centralização */
     }
 
     #bottom-header-links {
-        margin-left: 380px;
+        margin-left: 0; /* Remover margem à esquerda */
         gap: 30px;
     }
 
